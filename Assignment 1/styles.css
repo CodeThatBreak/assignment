@@ -1,0 +1,59 @@
+:root{
+    --border-radius:4px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    
+}
+
+.container{
+    margin: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.item-container{
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: var(--border-radius);
+    width: 300px;
+    
+}
+
+.item-text{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.item-image{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    min-width: 45px;
+}
+
+.preview-image{
+    border-radius: var(--border-radius);
+    width: 500px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.preview-title{
+    margin: 6px 0;
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+}
+
+.selected .item-text{
+    color: white;
+}
+
+.item-container.selected{
+    background-color: rgb(88, 88, 199);
+}
