@@ -17,7 +17,7 @@ function formatTitle(element,availableWidth) {
         mid = titleLength / 2;
 
   let distance = 1;
-  
+
   while (elementWidth >= availableWidth) {
 
     let newTitle = title.slice(0, mid - distance + 1) + "..." + title.slice(mid + distance);
@@ -81,7 +81,7 @@ function generateItemList() {
 
     const itemContentWidth = itemNode.clientWidth - getHorizontalPadding(itemNode) - itemImage.clientWidth
     const availableWidth = itemContentWidth - getHorizontalMargin(itemTitle)
-    console.log(availableWidth)
+    
     formatTitle(itemTitle,availableWidth);
 
     // Setting item at 0th index as default selected
